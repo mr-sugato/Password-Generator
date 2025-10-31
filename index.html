@@ -23,12 +23,32 @@
         <div class="up">
           <p class="title">Generate a <br /><span>random password</span></p>
           <p class="disc">Never use an insecure password again.</p>
+          <div class="checkboxes">
+            <label>
+              Include symbols
+              <input type="checkbox" name="symbol" id="symbols" checked="true" />
+            </label>
+            <label>
+              Include upperCases
+              <input type="checkbox" name="upperCase" id="upperCases" checked="true" />
+            </label>
+            <label>
+              Include numbers
+              <input type="checkbox" name="number" id="numbers" checked="true" />
+            </label>
+            <label>
+              Choose the password lenght
+              <span id="lenghtShow">15</span>
+              <input type="range" name="lenght" id="passLenght" min="10" max="15" value="15" oninput="updateValue()">
+            </label>
+          </div>
+
           <button onclick="generatePassword()">Generate password</button>
-          <hr />
         </div>
-        <div class="passwords">
-          <p id="passOne">eg&lt;xWij@veiPUwK</p>
-          <p id="passTwo">>nfJjy!dDvR&ial</p>
+        <hr />
+        <div class="passwords" draggable="false">
+          <p id="passOne" onclick="copyPassOne()"></p>
+          <p id="passTwo" onclick="copyPassTwo()"></p>
         </div>
       </div>
     </main>

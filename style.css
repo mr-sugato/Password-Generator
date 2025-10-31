@@ -4,7 +4,7 @@ body{
 .title{
   font: normal 60px "Bakbak One";
   color: #E2ECF3;
-  margin: 60px 0 0 0;
+  margin: 27px 0 0 0;
 }
 .up span{
   font-size: 70px;
@@ -12,7 +12,7 @@ body{
 }
 .disc{
   font: normal 30px "Inter";
-  color: #D5D4D8;
+  color: #acabaf;
   margin: 0;
 }
 .up button{
@@ -23,7 +23,7 @@ body{
   border: none;
   background-color: #EFB619;
   font: normal 24px "Inter";
-  margin: 50px 0 30px 0 ;
+  margin: 30px 0 30px 0 ;
   transition: all 0.17s;
 }
 .up button:hover{
@@ -48,6 +48,7 @@ hr{
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color 0.3s;
 }
 .up {
   align-items: normal;
@@ -61,4 +62,37 @@ main{
   display: flex;
   justify-content: space-around;
   margin: 0 70px;
+}
+.checkboxes {
+  margin-top: 15px;
+  color: rgb(247, 247, 247);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font: 300 22px "Inter";
+}
+
+.checkboxes label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  width: 520px;
+}
+.checkboxes input{
+  width: 18px;
+  height: 18px;
+}
+#passLenght{
+  width: 180px;
+}
+#lenghtShow{
+  font: 300 22px "Inter";
+
+}
+.passwords  p::selection{
+  color: greenyellow;
+}
+.up{
+  width: 600px;
+  margin-left: 40px;
 }
