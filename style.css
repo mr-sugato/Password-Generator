@@ -51,7 +51,11 @@ hr{
   transition: color 0.3s;
 }
 .up {
-  align-items: normal;
+
+  margin: 0 auto;
+  justify-content: center;
+  width: 600px;
+  
 }
 main{
   display: flex;
@@ -91,8 +95,4 @@ main{
 }
 .passwords  p::selection{
   color: greenyellow;
-}
-.up{
-  width: 600px;
-  margin-left: 40px;
 }

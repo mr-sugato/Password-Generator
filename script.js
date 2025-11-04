@@ -58,3 +58,5 @@ function getPass() {
   }
   return pass
 }
+
+localStorage.se
